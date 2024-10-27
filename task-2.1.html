@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="task-2.1.css">
+    <script src="task-2.1.js"></script>
+</head>
+<body>
+    <div class="signup">
+        <form action="/myaction.php" name="signupForm" onsubmit="return validateForm()" method="post">
+            <h3>Enter your details to sign up!</h3>
+            <div class="fattributes" id="firstname">
+                First Name: <br>
+                <input type="text" name="firstname" placeholder="Enter your first name"><br>
+                <span class="ferror"></span>
+            </div>
+            <div class="fattributes" id="lastname">
+                Last Name: <br>
+                <input type="text" name="lastname" placeholder="Enter your last name"><br>
+                <span class="ferror"></span>
+            </div>
+            <div class="fattributes" id="email">
+                Email: <br>
+                <input type="email" name="email" placeholder="Enter your email id"><br>
+                <span class="ferror"></span>
+            </div>
+            <div class="fattributes" id="password">
+                Password: <br>
+                <input type="password" name="password" placeholder="Enter the password"><br>
+                <span class="ferror"></span>
+            </div>
+            <div class="fattributes" id="phone">
+                Phone Number: <br>
+                <input type="number" name="phone" placeholder="Enter your phone number"><br>
+                <span class="ferror"></span>
+            </div>
+            <input class="button" type="submit" value="Sign up">
+        </form>
+    </div>
+</body>
+</html>

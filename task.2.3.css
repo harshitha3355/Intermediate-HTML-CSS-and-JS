@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'hfont';
+    src: url(/Font.ttf);
+}
+*{
+    margin: 10px;
+    border: none;
+}
+body{
+    background: radial-gradient(circle, rgb(252, 183, 208), rgb(254, 130, 167));
+}
+h2{
+    font-family: 'hfont', 'Times New Roman';
+    font-size: 150px;
+    font-weight: lighter;
+    text-align: center;
+}
+.gcontainer{
+    padding: 30px;
+    margin: 0 100px;
+    background-color: white;
+    border-radius: 28px;
+    box-shadow: 0 0 4px rgb(245, 128, 147);
+}
+.gallery{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+input{
+    padding: 15px;
+    border: 2px solid rgb(174, 38, 92);
+    border-radius: 28px;
+    width: 85%;
+}
+::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgrey;
+    font-size: large;
+}
+.btnremove{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgb(119, 70, 95);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+button{
+    padding: 15px;
+    background-color:rgb(174, 38, 92);
+    border-radius: 28px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(97, 23, 42);
+}

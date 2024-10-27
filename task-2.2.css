@@ -1,0 +1,133 @@
+*{
+    margin: none;
+    border: none;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 8px;
+    background-color: rgb(187, 246, 184);
+}
+nav{
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: large;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    padding: 5px;
+    margin: 0 10px;
+}
+ul li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+ul li a:hover{
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+.search input{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(2, 85, 50);
+    color: white;
+    transition: .5s;
+}
+.search ::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: white;
+    padding: 5px;
+}
+.search :hover{
+    box-shadow: 0 0 4px gray;
+    background-color: white;
+}
+.grid-container{
+    display: grid;
+    padding: 25px;
+    margin: 0 125px 0 125px;
+    grid-template:1fr 1fr/1fr 1fr ;
+    gap: 10px;
+}
+.heading h3{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.content{
+    box-shadow: 1px 1px 6px gray;
+    padding: 20px;
+}
+.content img{
+    max-width: 100%;
+    width: 900px;
+    height: 400px;
+}
+.content h3{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.content p{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+        margin: 5px 0;
+    }
+    nav{
+        flex-direction: column;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .logo{
+        font-size: medium;
+    }
+    ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    ul li{
+        margin: 5px 0;
+    }
+    .grid-container{
+        grid-template:1fr/1fr ;
+        margin: 0 10px;
+    }
+    .heading h3{
+        font-size: large;
+        margin-left: 0;
+        text-align: center;
+    }
+    .content img{
+        width: 100%;
+        height: auto;
+    }
+}
